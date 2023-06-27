@@ -1,0 +1,59 @@
+.form {
+	margin-block: 3rem;
+}
+
+.form__holder {
+	max-width: 250px;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	margin-inline: auto;
+	background-color: #9dc2c21b;
+	padding: 20px;
+	border: 1px solid rgb(191, 219, 223);
+	border-radius: 15px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.text__inp {
+	display: block;
+	padding: 5px;
+	border: 1px solid lightblue;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 15px;
+}
+
+.text__inp:focus {
+	outline: none;
+}
+
+.select__inp {
+	border-radius: 5px;
+	font-family: inherit;
+}
+
+.btn__holder {
+	display: flex;
+}
+
+.btn {
+	display: block;
+	font-weight: bold;
+	margin: auto;
+	padding: 2px 12px;
+	border: 1px solid rgb(211, 211, 211);
+	border-radius: 5px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.btn--set {
+	background-color: rgb(32, 178, 170);
+}
+
+.btn--clear {
+	background-color: rgb(9, 140, 211);
+}

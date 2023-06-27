@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bckup TABELA GVG</title>
+  <link rel="stylesheet" href="base_style.css">
+</head>
+
+<body>
+
+  <table>
+    <tbody>
+      <tr>
+        <th>FARM / BACKUP</th>
+        <th>TOP 3</th>
+        <th>4 a 10</th>
+        <th>11 a 20</th>
+        <th>21 a 30</th>
+      </tr>
+      <tr>
+        <td id="farm-correcao">
+          <div class="flex">
+            <span class="data">Bissi</span>
+            <span class="data">Newyear</span>
+          </div>
+          <div class="flex">
+            <span class="data">Kaimura</span>
+            <span class="data">DarkWolf</span>
+          </div>
+          <div class="flex">
+            <span class="data">Mumar<b>*</b></span>
+            <span class="data">Bilu</span>
+          </div>
+          <div class="flex">
+            <span class="data">Miyo</span>
+            <span class="data">Killua</span>
+          </div>
+          <div class="flex">
+            <span class="data">Single</span>
+            <span class="data">ReiVoltz</span>
+          </div>
+          <div class="flex">
+            <span class="data">Tomioka</span>
+            <span class="data">Ryuuya</span>
+          </div>
+          <div class="flex">
+            <span class="data">NooBz1n</span>
+            <span class="data">Wrath</span>
+          </div>
+        </td>
+        <td id="top-3">
+          <span class="data">Samurai</span>
+          <span class="data">Samurai</span>
+        </td>
+        <td id="quatro-dez">
+          <span class="data">Yumiko45</span>
+          <span class="data">NoBz1nN</span>
+          <span class="data">Emilia</span>
+          <span class="data">Gaurys</span>
+        </td>
+        <td id="onze-vinte">
+          <span class="data">Jocasta</span>
+          <span class="data">Bertopes</span>
+          <span class="data">Nigle</span>
+          <span class="data">Hendrick<b>*</b></span>
+          <span class="data">Marlove</span>
+        </td>
+        <td id="vinteum-trinta">
+          <span class="data">Dia</span>
+          <span class="data">Rayzz</span>
+          <span class="data">Incubus</span>
+          <span class="data">zRymura</span>
+          <span class="data">A K I R A<b>*</b></span>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    <strong>*</strong> = Recentemente alterados.
+  </p>
+  <p>
+    <strong>Farm/Backup</strong> = TODOS devem farmar TOP 3. Havendo erros ou faltando estrelas, podem cobrí-los.
+  </p>
+
+  <script>
+
+    function orderData(id) {
+      const tableData = document.querySelectorAll(`${id} .data`)
+      const tableDataArray = Array.from(tableData)
+      const innerTextes = tableDataArray.map((dataItem) => {
+        let inner = dataItem.innerHTML
+        return inner
+      })
+      const sortedDatas = innerTextes.sort()
+      for (let i = 0; i < tableDataArray.length; i++) {
+        tableDataArray[i].innerHTML = sortedDatas[i]
+      }
+    }
+    orderData('#farm-correcao')
+    orderData('#quatro-dez')
+    orderData('#onze-vinte')
+    orderData('#vinteum-trinta')
+
+  </script>
+</body>
+
+</html>

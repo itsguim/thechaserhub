@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap');
+@import url(./style/table.css);
+@import url(./style/form.css);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg-table-cl: rgb(240, 243, 243);
+	--secondary-bg-cl: rgb(230, 236, 239);
+	--tertiary-bg-cl: rgb(228, 232, 235);
+}
+
+html {
+	font-size: 62, 5%;
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	background: linear-gradient(
+			0deg,
+			rgba(23, 23, 24, 0.678) 9%,
+			rgba(13, 14, 14, 0.639) 100%
+		),
+		url(./public/BG-calli.jpg) no-repeat;
+	background-size: cover;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: fit-content;
+	background: rgba(74, 74, 74, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(37, 38, 66, 0.37);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 1rem;
+}

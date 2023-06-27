@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+:root {
+	--cl-old: #185a9d;
+	--cl-old2: #43cea2;
+
+	/*current pallete \/*/
+	--cl-grad1: #ef813c;
+	--cl-grad2: #e94057;
+	--cl-grad3: #8a2387;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 19px;
+	background-color: rgb(230, 236, 239);
+}
+/*reset /\*/
+
+table {
+	border-collapse: collapse;
+	box-shadow: 3px 3px 8px rgba(197, 196, 196, 0.614);
+	width: 30%;
+	overflow: hidden;
+	border-radius: 5px 5px 0 0;
+	margin: 10px;
+}
+
+table tbody {
+	border-bottom: 2px solid rgb(15, 134, 120);
+}
+
+tbody tr /*Table Rows*/ {
+	border-bottom: 1px solid rgb(59, 172, 159);
+}
+
+th /*Table Header Cell*/ {
+	padding: 5px 2px;
+}
+
+tbody tr:first-child /*Header ROW*/ {
+	background: linear-gradient(to right, var(--cl-old), var(--cl-old2));
+}
+
+tbody th /* Headers individuais*/ {
+	text-align: center;
+	color: rgb(248, 249, 249);
+	font-size: 15px;
+}
+
+tbody td /* Cells */ {
+	text-align: center;
+	background: rgb(240, 243, 243);
+	/* background: #fbf3f4; */
+}
+
+.flex /*Div Cells*/ {
+	display: flex;
+	justify-content: center;
+}
+
+.data /*Style Data*/ {
+	display: inline-block;
+	padding: 3px 13px;
+}
+
+.flex .data {
+	display: block;
+	width: 100px;
+	padding: 5px 5px;
+}
+
+table tbody td:nth-child(even) {
+	background: rgb(248, 249, 249);
+}
+
+/*--*/
+p {
+	font-size: 12px;
+	font-style: italic;
+	display: block;
+	margin-left: 10px;
+}

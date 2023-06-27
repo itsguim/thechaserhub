@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GC Utils 1.0 - by Kaimura</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./public/GC-ICON.ico" type="image/x-icon">
+  <link rel="preload" href="./public/BG-calli.jpg" as="image">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="table_holder">
+      <table id="table-main">
+        <tbody>
+          <tr id="header_row">
+            <th>FARM / BACKUP</th>
+            <th>TOP 3</th>
+            <th>4 - 10</th>
+            <th>11 - 20</th>
+            <th>21 - 30</th>
+          </tr>
+          <tr id="data_row" class="row-stretcher">
+            <td class="data_handler" id="farm-correcao" data-colpos="0">
+            </td>
+            <td class="data_handler" id="top3" data-colpos="1">
+            </td>
+            <td class="data_handler" id="top10" data-colpos="2">
+            </td>
+            <td class="data_handler" id="top20" data-colpos="3">
+            </td>
+            <td class="data_handler" id="top30" data-colpos="4">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <form id="table-form" class="form">
+      <div class="form__holder">
+        <input type="text" name="" id="text-inp" class="text__inp" placeholder="Nome do player">
+        <select name="" id="col-inp" class="select__inp">
+          <option value="0">Farm/Backup</option>
+          <option value="1">TOP 3</option>
+          <option value="2">4 a 10</option>
+          <option value="3">11 a 20</option>
+          <option value="4">21 a 30</option>
+        </select>
+        <div class="btn__holder">
+          <button class="btn btn--set" id="set-btn">
+            Set
+          </button>
+          <button class="btn btn--clear" id="clear-btn">
+            Clear
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

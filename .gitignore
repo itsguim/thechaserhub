@@ -10,6 +10,7 @@ Thumbs.db:encryptable
 ehthumbs.db
 
 template/
-workflow.md
+backup/
 
 PSEUDO.md
+workflow.md

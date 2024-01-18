@@ -13,7 +13,7 @@ function handleSetData(e) {
   if (textValue !== '') {
     // Define the data 
     const spanData = document.createElement('span')
-    spanData.innerHTML = textValue
+    spanData.innerText = textValue
     spanData.classList.add('data')
     // Append data to the selected column
     tableColumns[colValue].append(spanData)

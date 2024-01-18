@@ -18,7 +18,7 @@ clearBtn.addEventListener('click', clearAllData)
 function clearAllData(e) {
   e.preventDefault()
   document.querySelectorAll('.data').forEach(data => data.remove())
-  // Update localstorage quando limpar tudo
+  updateLocalStorage()
 }
 
 
